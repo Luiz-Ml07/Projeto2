@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Meu Site</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <section class="Links">
+    <nav>
+      <!--Abaixo estão os links para as páginas-->
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre mim</a>
+      <a href="portfolio.html">Portfólio</a>
+      <a href="formacao.html">Formação</a>
+      <a href="contato.html">Contato</a>
+    </section>
+    </nav>
+  </header>
+  <main>
+    <!--Abaixo está o conteúdo principal da nossa terceira página-->
+    <h1>Bem-vindo ao meu Portifólio !</h1>
+    <p id="paragrafo">Aqui você vai encontrar meu outro projeto.</p>
+    <button onclick="mudarCor()">Mudar cor do texto</button> </br>
+    <a href="https://luiz-ml07.github.io/Projeto1/" target="_blank" class="btn">Ver site do Cruzeiro</a>
+  </main>
+
+  <!--Abaixo está o rodapé da nossa terceira página-->
+<footer>
+  <p> &copy 2025 Portifólios. Todos os direitos reservados.</p>
+</footer>
+
+<!--Abaixo está o código javascript da nossa terceira página-->
+<script>
+  function mudarCor() {
+    let texto = document.getElementById("paragrafo");
+    if (texto.style.color === "blue") {
+      texto.style.color = "black";
+    } else {
+      texto.style.color = "blue";
+    }
+  }
+</script>
+</body>
+</html>

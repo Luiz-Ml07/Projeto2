@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Meu Site</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <section class="Links">
+    <nav>
+      <!--Abaixo estão os links para as páginas-->
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre mim</a>
+      <a href="portfolio.html">Portfólio</a>
+      <a href="formacao.html">Formação</a>
+      <a href="contato.html">Contato</a>
+    </section>
+    <nav>
+    </nav>
+  </header>
+  <main>
+    <!--Abaixo está o conteúdo principal da nossa primeira página-->
+    <h1>Bem-vindo ao meu site!</h1> </br>
+    <button onclick="mostrarTexto()">Mostrar mais</button>
+    <p id="texto" style="display:none;">
+    Aqui você vai encontrar informações sobre mim, meu portfólio, minha formação e como entrar em contato comigo.
+    </p>
+  </main>
+
+  <!--Abaixo está o rodapé da nossa primeira página-->
+<footer>
+  <p> &copy 2025 Portifólios. Todos os direitos reservados.</p>
+</footer>
+
+<!--Abaixo está o código javascript da nossa primeira página-->
+<script>
+  function mostrarTexto() {
+    let paragrafo = document.getElementById("texto");
+    if (paragrafo.style.display === "none") {
+      paragrafo.style.display = "block";
+    } else {
+      paragrafo.style.display = "none";
+    }
+  }
+</script>
+</body>
+</html>
